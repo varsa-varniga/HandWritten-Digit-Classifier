@@ -16,7 +16,7 @@ import {
 } from '@mui/icons-material';
 import { styled } from '@mui/material/styles';
 
-// Styled component for file input
+
 const VisuallyHiddenInput = styled('input')({
   clip: 'rect(0 0 0 0)',
   clipPath: 'inset(50%)',
@@ -29,7 +29,6 @@ const VisuallyHiddenInput = styled('input')({
   width: 1,
 });
 
-// Styled upload zone
 const UploadZone = styled(Box)(({ theme }) => ({
   border: `2px dashed ${theme.palette.divider}`,
   borderRadius: theme.shape.borderRadius,
@@ -67,7 +66,7 @@ const App = () => {
   const handleFile = (selectedFile) => {
     if (!selectedFile) return;
     
-    // Check if file is an image
+
     if (!selectedFile.type.startsWith('image/')) {
       setError('Please upload an image file');
       return;
@@ -76,7 +75,7 @@ const App = () => {
     setFile(selectedFile);
     setError(null);
     
-    // Create preview URL
+ 
     const reader = new FileReader();
     reader.onload = () => {
       setPreviewUrl(reader.result);
@@ -97,7 +96,7 @@ const App = () => {
     setError(null);
     setProgress(0);
 
-    // Update progress animation
+
     const progressInterval = setInterval(() => {
       setProgress(prev => (prev >= 90 ? 90 : prev + 10));
     }, 200);
