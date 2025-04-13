@@ -76,7 +76,9 @@ Predicted Label: 9
 Confidence: 98%
 
 📊 Demo Screenshot
-![image](https://github.com/user-attachments/assets/c913a822-82bf-4322-bd91-1c14865aaa76)
+## 📸 Demo
+
+![Digit Prediction Demo](assets/demo.png)
 
 🤝 Contributions
 Feel free to fork, improve, or extend this project. Open to collaboration and feedback!
