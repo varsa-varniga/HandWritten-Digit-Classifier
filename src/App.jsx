@@ -268,7 +268,7 @@ const App = () => {
                   {result.digit}
                 </Typography>
                 
-                {/* Enhanced confidence display */}
+            
                 <Paper 
                   elevation={2}
                   sx={{

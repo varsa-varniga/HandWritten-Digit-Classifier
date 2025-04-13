@@ -6,7 +6,7 @@ from PIL import Image
 import os
 
 app = Flask(__name__)
-CORS(app)  # 🔥 Enable CORS to allow React frontend requests
+CORS(app)  #
 
 model = load_model("model/mnist_cnn.h5")
 
